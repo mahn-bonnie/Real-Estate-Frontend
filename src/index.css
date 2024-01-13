@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: 	rgb(248, 241, 250);
+}         
+               
+.button{
+    background-color: #043f64;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+@keyframes glowing{
+    0%{
+        background-color: #1e241c;
+        box-shadow: 0 0 3px #1e241c;
+    }
+    50%{
+        background-color: #808080;
+        box-shadow: 0 0 10px #808080;
+    }
+    100%{
+        background-color: darkblue;
+        box-shadow: 0 0 3px darkblue;
+    }
+}
+
+.button{
+    animation: glowing 1300ms infinite;
+}
